@@ -24,7 +24,7 @@ if (typeof window === 'undefined') {
     // require once
     if (!global.Canvas) {
       console.log('pixi-shim: polyfill canvas for canvas')
-      global.Canvas = require('canvas-prebuilt')
+      global.Canvas = require('canvas')
     }
   }
 
@@ -32,7 +32,7 @@ if (typeof window === 'undefined') {
     // this might be required for image
     if (!global.Canvas) {
       console.log('pixi-shim: polyfill canvas for image')
-      global.Canvas = require('canvas-prebuilt')
+      global.Canvas = require('canvas')
     }
     global.Image = global.Canvas.Image
 
